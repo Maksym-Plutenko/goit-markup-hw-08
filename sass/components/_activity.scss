@@ -1,0 +1,42 @@
+.activity {
+    padding-top: 0;
+  }
+  
+  .activity__list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .activity-example {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  
+  .activity-example__img {
+    display: block;
+  }
+  
+  .activity-example__description {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  
+    background: rgba(47, 48, 58, 0.8);
+  }
+  
+  .activity-example__text {
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: var(--light-text-color);
+  }
+  

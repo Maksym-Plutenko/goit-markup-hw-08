@@ -1,0 +1,30 @@
+.clients__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .brand__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 170px;
+    height: 92px;
+  
+    color: var(--main-icon-color);
+    border: 1px solid var(--main-icon-color);
+    border-radius: 4px;
+  
+    transition: color var(--main-transition), border-color var(--main-transition);
+
+    &:hover,
+    &:focus {
+      color: var(--selected-text-color);
+      border-color: var(--selected-text-color);
+    }
+  }
+
+  .brand__logo {
+    fill: currentColor;
+  }

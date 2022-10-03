@@ -1,0 +1,37 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .section__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .link {
+    text-decoration: inherit;
+    color: inherit;
+  
+    transition: color var(--main-transition);
+
+    &:hover,
+    &:focus {
+        color: var(--selected-text-color);
+    }
+  }
+
+.button {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+  }
+
+  .list {
+    list-style-type: none;
+    text-indent: 0;
+    margin: 0;
+    padding: 0;
+  }

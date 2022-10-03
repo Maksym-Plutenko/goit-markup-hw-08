@@ -1,0 +1,25 @@
+// utils
+@import 'utils/variables';
+@import 'utils/default-text-style';
+@import 'utils/container';
+@import 'utils/common-classes';
+@import 'utils/text-margins-reset';
+@import 'utils/visually-hidden';
+
+// components
+  // main page
+@import 'components/header';
+@import 'components/front';
+@import 'components/benefits';
+@import 'components/benefits';
+@import 'components/activity';
+@import 'components/team';
+@import 'components/clients';
+@import 'components/footer';
+@import 'components/modal';
+  // portfolio page
+@import 'components/portfolio-page';
+  // small components
+@import 'components/logo';
+@import 'components/socials';
+@import 'components/subscription-form';

@@ -1,0 +1,43 @@
+.front {
+    background-color: var(--main-bg-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/front/background.jpg);
+    background-repeat: no-repeat;
+    background-position: left calc(50%) top;
+  }
+  
+  .front__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--light-text-color);
+    margin-bottom: 30px;
+  }
+  
+  .front__btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+    background-color: var(--button-bg-main-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--light-text-color);
+  
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
