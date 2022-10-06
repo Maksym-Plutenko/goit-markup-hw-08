@@ -5,6 +5,8 @@
   .team__list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 300px;
   }
   
   .team-member {
@@ -14,10 +16,12 @@
     background-color: var(--card--bg-main-color);
   }
   
-  .team-member:not(:last-child) {
-    margin-right: 30px;
-  }
+  // .team-member:not(:last-child) {
+  //   margin-right: 30px;
+  // }
   
+  //pic
+
   .team-member__description {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -39,3 +43,4 @@
     color: var(--content--text-color);
     margin-bottom: 16px;
   }
+  

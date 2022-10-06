@@ -1,10 +1,16 @@
 .front {
     background-color: var(--main-bg-color);
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/front/background.jpg);
     background-repeat: no-repeat;
     background-position: left calc(50%) top;
+    // pic
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
   }
   
   .front__title {
@@ -36,8 +42,13 @@
     letter-spacing: 0.06em;
     color: var(--light-text-color);
   
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    @media screen and (min-width: 1200px) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
   }

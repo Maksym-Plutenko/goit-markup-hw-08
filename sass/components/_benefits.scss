@@ -1,14 +1,28 @@
 .benefits__list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
   }
   
   .benefits__item {
-    flex-basis: 270px;
+    // flex-basis: 290px;
 
-    &:not(:last-child) {
-      margin-right: 30px;
+    @media screen and (min-width: 480px) {
+      flex-basis: 450px;
     }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: 270px;
+    }
+
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
   }
   
   .advantage {
@@ -30,6 +44,11 @@
     line-height: calc(16 / 14);
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
   }
   
   .advantage__content {
