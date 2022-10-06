@@ -6,8 +6,20 @@
   
   .footer__container {
     display: flex;
+    justify-content: center;
     align-items: baseline;
-    gap: 70px;
+    flex-wrap: wrap;
+    // gap: 70px;
+    column-gap: 165px;
+    row-gap: 60px;
+
+    @media screen and (min-width: 768px) {
+      
+    }
+
+    @media screen and (min-width: 1200px) {
+      column-gap: 70px;
+    }
   }
   
   .address {
@@ -17,11 +29,19 @@
   .address__physical {
     line-height: calc(24 / 14);
     color: var(--light-text-color);
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
   
   .address__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
   
   .address__link {
@@ -37,4 +57,8 @@
     color: var(--light-text-color);
   
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
   }
