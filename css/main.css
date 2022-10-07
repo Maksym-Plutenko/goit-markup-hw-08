@@ -146,7 +146,7 @@ p {
 }
 
 .navigation {
-  margin-right: auto;
+  margin-right: 96px;
 }
 @media screen and (max-width: 767px) {
   .navigation {
@@ -163,6 +163,11 @@ p {
     overflow: hidden;
   }
 }
+@media screen and (min-width: 1200px) {
+  .navigation {
+    margin-right: auto;
+  }
+}
 
 .navigation__list {
   display: -webkit-box;
@@ -175,7 +180,10 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  row-gap: 10px;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -242,17 +250,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-            clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    visibility: hidden;
   }
 }
 

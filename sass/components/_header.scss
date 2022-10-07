@@ -10,10 +10,13 @@
   .header__container {
     display: flex;
     align-items: center;
+    // justify-content: space-between;
+    // gap: 90px;
+    // gap: auto;
   }
   
   .navigation {
-    margin-right: auto;
+    margin-right: 96px;
 
     @media screen and (max-width: 767px) {
       position: absolute;
@@ -27,6 +30,10 @@
       clip-path: inset(100%);
       clip: rect(0 0 0 0);
       overflow: hidden;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: auto;
     }
   }
   
@@ -37,9 +44,14 @@
 
   .contacts {
     display: flex;
-    gap: 30px;
+    // gap: 30px;
+    row-gap: 10px;
+    column-gap: 30px;
     flex-wrap: wrap;
 
+    // background-color: aqua;
+
+    // margin-left: auto;
 
     @media screen and (max-width: 767px) {
       position: absolute;
@@ -55,7 +67,6 @@
       overflow: hidden;
     }
   }
-
   
   // .navigation__item:not(:last-child),
   // .contacts__item:not(:last-child) {
@@ -110,16 +121,18 @@
   // fill: tomato;
 
   @media screen and (min-width: 768px) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+    visibility: hidden;
+    
+    // position: absolute;
+    // width: 1px;
+    // height: 1px;
+    // margin: -1px;
+    // border: 0;
+    // padding: 0;
   
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    // white-space: nowrap;
+    // clip-path: inset(100%);
+    // clip: rect(0 0 0 0);
+    // overflow: hidden;
   }
 }
