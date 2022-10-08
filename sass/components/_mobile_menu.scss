@@ -1,0 +1,70 @@
+// button for opening mobile menu
+  .mobile-menu {
+    background-color: transparent;
+  
+    @media screen and (min-width: 768px) {
+      visibility: hidden;
+    }
+  }
+
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: #fff;
+}
+
+.menu-container_close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+}
+
+
+// .mob-navigation {
+// }
+// .mob-navigation__list {
+// }
+// .list {
+// }
+// .mob-navigation__item {
+// }
+
+.mob-navigation__link {
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+}
+
+// .link {
+// }
+// .mob-contacts {
+// }
+// .mob-contacts__item {
+// }
+
+.mob-contacts__tel {
+    font-size: 34px;
+line-height: 40px;
+letter-spacing: 0.02em;
+}
+
+.mob-contacts__mail {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: var(--content--text-color);
+}
+
+// .mob-socials {
+// }
+// .mob-socials__item {
+// }
+
+// .mob-socials__link {
+// }
