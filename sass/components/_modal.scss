@@ -12,9 +12,10 @@
   
   .modal {
     position: absolute;
-    width: 528px;
-    height: 581px;
-  
+
+    width: calc(100% - 30px);
+    min-height: 609px;
+
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -30,6 +31,16 @@
     border-radius: 4px;
   
     transition: transform var(--main-transition);
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      height: 609px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 528px;
+      height: 581px;
+    }
   }
   
   .modal__close-btn {
@@ -76,10 +87,14 @@
   
     font-weight: 700;
     font-size: 20px;
-    line-height: calc(23 / 20);
+    line-height: calc(30 / 20);
     text-align: center;
   
     margin-bottom: 12px;
+
+    @media screen and (min-width: 1200px) {
+      line-height: calc(23 / 20);
+    }
   }
   
   .input-field {
