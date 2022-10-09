@@ -583,6 +583,20 @@ p {
   background-color: var(--card--bg-main-color);
 }
 
+.team-member__photo {
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .team-member__photo {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-member__photo {
+    width: 270px;
+  }
+}
+
 .team-member__description {
   padding-top: 30px;
   padding-bottom: 30px;

@@ -20,7 +20,17 @@
   //   margin-right: 30px;
   // }
   
-  //pic
+  .team-member__photo {
+    width: 450px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+  }
 
   .team-member__description {
     padding-top: 30px;
