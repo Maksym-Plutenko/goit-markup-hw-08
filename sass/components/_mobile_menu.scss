@@ -42,17 +42,6 @@
     background-color: transparent;
 }
 
-// text blocks of menu
-
-// .mob-navigation {
-//     padding-bottom: 64px;
-// }
-
-// .mob-navigation__list {
-// }
-// .list {
-// }
-
 .mob-navigation__item:not(:last-child) {
     padding-bottom: 32px;
 }
@@ -66,9 +55,6 @@
 .mob-navigation__link--active {
     color: var(--selected-text-color);
 }
-
-// .link {
-// }
 
 .mob-contacts {
     margin-bottom: auto;
@@ -112,13 +98,9 @@
     left: -10px;
 }
 
-// .mob-socials__item {
-// }
-
 .mob-socials__link {
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.02em;
     color: var(--selected-text-color);
 }
-

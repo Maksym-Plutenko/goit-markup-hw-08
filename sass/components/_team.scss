@@ -16,12 +16,7 @@
     background-color: var(--card--bg-main-color);
   }
   
-  // .team-member:not(:last-child) {
-  //   margin-right: 30px;
-  // }
-  
   .team-member__photo {
-//    width: 450px;
     max-width: 450px;
 
     @media screen and (min-width: 768px) {
