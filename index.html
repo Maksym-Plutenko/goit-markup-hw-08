@@ -196,10 +196,17 @@
             <li class="team-member">
               <img
                 class="team-member__photo"
-                src="images/team/img1.jpg"
+                srcset="
+                  ./images/team/1/270.jpg 270w,
+                  ./images/team/1/354.jpg 354w, 
+                  ./images/team/1/450.jpg 450w, 
+                  ./images/team/1/540.jpg 540w, 
+                  ./images/team/1/708.jpg 708w, 
+                  ./images/team/1/900.jpg 900w, 
+                "
+                sizes="(min-wight: 1200px) 270px, (min-wight: 768px) 354px, (min-wight: 480px) 450px, 100vw"
+                src="./images/team/1/354.jpg"
                 alt="Фото Ігоря Дем'яненка"
-                width="270"
-                height="260"
               />
               <div class="team-member__description">
                 <h3 class="team-member__name">Ігор Дем'яненко</h3>
