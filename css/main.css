@@ -336,6 +336,23 @@ p {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mob-socials__item {
+  position: relative;
+}
+
+.mob-socials__item + .mob-socials__item::before {
+  content: " ";
+  display: block;
+  width: 0px;
+  height: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  position: absolute;
+  top: 0;
+  left: -10px;
 }
 
 .mob-socials__link {
@@ -1004,6 +1021,17 @@ p {
 
 .register-form-checkbox:focus + .checkbox__label .checkbox__icon {
   outline-color: var(--main-text-color);
+}
+
+.checkbox__text {
+  font-size: 12px;
+  line-height: 1.1666666667;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__text {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 /* submit button */

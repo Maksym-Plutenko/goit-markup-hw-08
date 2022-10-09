@@ -249,6 +249,16 @@
     outline-color: var(--main-text-color);
   }
   
+  .checkbox__text {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(24 / 14);
+    }
+  }
+
   /* submit button */
   .register-form__btn {
     display: block;

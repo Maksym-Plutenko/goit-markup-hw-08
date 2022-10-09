@@ -94,6 +94,22 @@
 .mob-socials {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+}
+
+.mob-socials__item {
+    position: relative;
+}
+
+.mob-socials__item + .mob-socials__item::before {
+    content: ' ';
+    display: block;
+    width: 0px;
+    height: 22px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    position: absolute;
+    top: 0;
+    left: -10px;
 }
 
 // .mob-socials__item {
@@ -105,3 +121,4 @@
     letter-spacing: 0.02em;
     color: var(--selected-text-color);
 }
+
