@@ -12,10 +12,6 @@
     column-gap: 165px;
     row-gap: 60px;
 
-    @media screen and (min-width: 768px) {
-      
-    }
-
     @media screen and (min-width: 1200px) {
       column-gap: 70px;
     }
@@ -46,6 +42,11 @@
   .address__link {
     line-height: calc(24 / 14);
     color: rgba(255, 255, 255, 0.6);
+    display: block;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
   }
   
   .footer__call {
