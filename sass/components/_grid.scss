@@ -1,12 +1,20 @@
 .projects__grid {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 30px;
-    column-gap: 30px;
+    row-gap: var(--greed-gap);
+    column-gap: var(--greed-gap);
+
+    @media screen and (min-width: 768px) {
+      --greed-col-number: 2;
+    }
+
+    @media screen and (min-width: 1200px) {
+      --greed-col-number: 3;
+    }
   }
   
   .project {
-    flex-basis: calc((100% - 60px) / 3);
+    flex-basis: calc( (100% - var(--greed-col-number) * var(--greed-gap) + var(--greed-gap)) / var(--greed-col-number) );
   }
   
   .project__link {
