@@ -15,10 +15,14 @@
   
   .project {
     flex-basis: calc( (100% - var(--greed-col-number) * var(--greed-gap) + var(--greed-gap)) / var(--greed-col-number) );
+
+    display: flex;
   }
   
   .project__link {
-    display: block;
+    // display: block;
+    display: flex;
+    flex-direction: column;
     transition: box-shadow var(--main-transition);
 
     &:hover,
@@ -32,6 +36,7 @@
   .project__card {
     position: relative;
     overflow: hidden;
+    flex-grow: 1;
   }
   
   .project__img {
