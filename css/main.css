@@ -255,7 +255,7 @@ p {
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -379,7 +379,8 @@ p {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/front/bg-mob@1x.jpg);
   background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/front/bg-mob@1x.jpg);
   background-repeat: no-repeat;
-  background-position: left 50% top;
+  background-position: center;
+  background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .front {
@@ -705,24 +706,35 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 165px;
-     -moz-column-gap: 165px;
-          column-gap: 165px;
   row-gap: 60px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .footer__container {
-    -webkit-column-gap: 70px;
-       -moz-column-gap: 70px;
-            column-gap: 70px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__group {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__group {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__group {
+    margin-right: 70px;
   }
 }
 
@@ -734,6 +746,11 @@ p {
   line-height: 1.7142857143;
   color: var(--light-text-color);
   margin-bottom: 8px;
+}
+@media screen and (max-width: 1199px) {
+  .address__physical {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .address__physical {
@@ -758,6 +775,12 @@ p {
 @media screen and (max-width: 1199px) {
   .address__link {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__socials {
+    margin-right: auto;
   }
 }
 
@@ -1320,9 +1343,6 @@ p {
   fill: currentColor;
 }
 
-.subscription-form {
-  padding-left: 14px;
-}
 @media screen and (min-width: 1200px) {
   .subscription-form {
     padding-left: 23px;

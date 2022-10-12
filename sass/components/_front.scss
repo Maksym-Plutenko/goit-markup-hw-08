@@ -4,7 +4,8 @@
     padding-bottom: 118px;
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/front/bg-mob@1x.jpg);
     background-repeat: no-repeat;
-    background-position: left calc(50%) top;
+    background-position: center;
+    background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
